@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="477.0" prefWidth="829.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="word" prefHeight="39.0" prefWidth="143.0" promptText="word" GridPane.columnIndex="3" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <ListView fx:id="words" onMouseClicked="#handleClickOnListview" prefHeight="43.0" prefWidth="157.0" GridPane.rowIndex="7" />
+      <TextField alignment="CENTER" editable="false" prefHeight="58.0" prefWidth="369.0" text="DICTIONARY" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="showInfo" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Button fx:id="pos" mnemonicParsing="false" onAction="#handleClickOnPos" prefHeight="26.0" prefWidth="144.0" text="Part of speech" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="14" />
+      <Button fx:id="ex" mnemonicParsing="false" onAction="#handleClickOnExample" text="Example" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="14" />
+      <Button fx:id="nw" mnemonicParsing="false" onAction="#handleNewWordOnClick" text="New" GridPane.halignment="CENTER" GridPane.rowIndex="14" />
+      <Button fx:id="mean" mnemonicParsing="false" onAction="#handleClickOnMeaning" text="Meaning" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.vgrow="ALWAYS" />
+      <TextField fx:id="edit" prefHeight="34.0" prefWidth="143.0" promptText="edit " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" text="JSON" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <Button mnemonicParsing="false" text="XML" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10" />
+   </children>
+   <rowConstraints>
+      <RowConstraints maxHeight="54.400000000000006" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="23.999999999999996" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="-1.4210854715202004E-14" prefHeight="0.0" />
+      <RowConstraints maxHeight="325.6" minHeight="4.000024414062494" prefHeight="325.6" />
+      <RowConstraints maxHeight="310.40000000000003" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="310.40000000000003" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="310.40000000000003" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="310.40000000000003" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="310.40000000000003" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="310.40000000000003" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="187.99999999999997" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="29.5999755859375" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="20.399999999999977" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="15.600012207031227" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="415.20000000000005" minWidth="101.60000000000002" prefWidth="121.39999532699585" />
+      <ColumnConstraints maxWidth="422.0" minWidth="10.0" prefWidth="396.8" />
+      <ColumnConstraints maxWidth="299.20000000000005" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="370.8000244140625" minWidth="10.0" prefWidth="143.19999999999993" />
+      <ColumnConstraints maxWidth="306.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+</GridPane>

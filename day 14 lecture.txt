@@ -1,0 +1,20 @@
+Imformation hiding
+- การรับข้อมูลมีความไม่ปลอดภัย 
+- ควรสร้าง interface ใหม่ เพื่อความปลอดภัยของข้อมูล ผ
+- static binding => จะมีการพิจารณา type ที่เรากำหนด
+- dynamic => จะใช้ method ตามที่มันเป็น
+
+coupling =>การเปลี่ยนแปลงใน class และทำให้อีก class เปลี่ยนแปลงตาม
+incapsulate => กระบวนการเปรียบเทียบใน tree set
+information hinding => การซ้อน/ป้องกันข้อมูลในการเข้าถึง ผ่าน interface
+
+" Abstract Class "
+กึ่ง sup. class กับ interface ใช้เมื่อ 2 คลาสมีความคล้ายกันมาก แต่มีข้อแตกต่าง เช่น พนักงานpart time กับ salary
+abstact class ไม่สามารถสร้าง obj.ได้ แต่สามารถสร้างเป็น sup. class 
+ประโยชน์ : share code ได้ แต่ type ของ obj. จะต้องเป็น sub. class
+
+" Exception " มี 3 ประเภท 
+       - syntax error
+       - runtime error => try catch
+       - logic error
+exception is object that can throw, try/catch
